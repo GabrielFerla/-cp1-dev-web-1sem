@@ -1,4 +1,4 @@
-// alert("Seja bem Vindo")
+alert("Seja bem Vindo")
 
 function validateEmail() {
     const emailInput = document.getElementById('email');
