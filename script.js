@@ -1,17 +1,19 @@
-alert("Seja bem Vindo")
+// alert("Seja bem Vindo")
 
+function validateEmail() {
+    const emailInput = document.getElementById('email');
+    const emailError = document.getElementById('email-error');
 
-function validar(){
-    let usuario =document.getElementById("usuario").value
-    let senha =document.getElementById("senha").value
-}
+    if (emailInput.value.trim() === '') {
+        return false
+    } else if (!/\S+@\S+\.\S+/.test(emailInput.value)) {
+        return false
+    } else {
+        return true
+    }
 
-if(usuario =="" && senha ==""){
-    alert("preencha todos os campos")
-}else{
-    alert("Acesso Permitido")
-    window.open('menu.html')
-}
+    
+  }
 
 function calc(){
     let num1 = Number(prompt("Digite o primeiro número"))
@@ -41,3 +43,12 @@ function calc(){
         
     }
 }
+
+function validar(){
+    if(validateEmail() == true){
+        alert("Formulario enviado com sucesso")
+    }else{
+        alert("Preencha os campos corretamente")
+    }
+}
+
