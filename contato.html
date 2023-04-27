@@ -9,39 +9,36 @@
     <title>Contato</title>
 </head>
 <body>
-    
     <div class="container">
         <nav id="Menu">
-
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
                 <li><a href="contato.html"></a>contato</li>
-            
                 <li><a href="quiz.html">Quiz</a></li>
-
-
-
             </ul>
-
-
-
-
         </nav>
-
         <h1>Contato</h1>
 
-        
-
-
-
-
-
+        <form id="contact-form" method="post" action="#">
+            <div class="form-group">
+              <label for="name" class="form-label">Nome:</label>
+              <input type="text" id="name" name="name" class="form-input">
+              <span id="name-error" class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone" class="form-label">Telefone:</label>
+              <input type="tel" id="phone" name="phone" class="form-input">
+              <span id="phone-error" class="form-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="email" class="form-label">E-mail:</label>
+              <input type="email" id="email" name="email" class="form-input">
+              <span id="email-error" class="form-error"></span>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
     </div>
-   
-
-
-
     <script src="script.js"></script>
 </body>
 </html>

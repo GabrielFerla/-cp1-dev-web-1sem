@@ -38,7 +38,6 @@ function calc(){
                 default:
                     msg.innerHTML += `<p>Opção Inválida</p>`
                 break;
-            
-
+        
     }
 }
