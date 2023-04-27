@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(to right, red, black);
+    background-color: #ccc;
 }
 
 .container{
@@ -53,6 +53,18 @@ p{
     align-items: center;
 }
 
+
+.quiz {
+    max-width:600px; 
+    height:auto; 
+    float:none; 
+    margin:auto; 
+    padding:1em; 
+    margin-bottom:1em; 
+    border-radius:6px; 
+    position:relative; 
+    text-align: center;
+}
 .contato { 
     max-width:600px; 
     height:auto; 
@@ -105,4 +117,24 @@ p{
 }
 .contato button.btn-envia:hover { 
     background-color:#333; 
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#button1 {
+    background-color: red;
+    color: #fff;
+}
+#button2 {
+    background-color: green;
+    color: #fff;
+}
+#button3 {
+    background-color: blue;
+    color: #fff;
 }
