@@ -2,7 +2,6 @@
 
 function validateEmail() {
     const emailInput = document.getElementById('email');
-    const emailError = document.getElementById('email-error');
 
     if (emailInput.value.trim() === '') {
         return false
@@ -11,10 +10,35 @@ function validateEmail() {
     } else {
         return true
     }
-
     
   }
 
+function validateNome() {
+    const nomeInput = document.getElementById('nome');
+    
+    if (nomeInput.value.trim() === '') {
+        return false
+    } else if (nomeInput.value.length < 3) {
+        return false
+    } else {
+        return true
+    }
+}
+
+function validatePhone(){
+    const phoneInput = document.getElementById('phone');
+    
+    if (phoneInput.value.trim() === '') {
+        return false
+    }
+    else if (phoneInput.value.length < 11) {
+        return false
+    }
+    else {
+        return true
+    }
+  
+}
 function calc(){
     let num1 = Number(prompt("Digite o primeiro número"))
     let num2 = Number(prompt("Digite o segundo número"))
@@ -45,7 +69,7 @@ function calc(){
 }
 
 function validar(){
-    if(validateEmail() == true){
+    if(validateEmail() == true && validateNome() == true && validatePhone() == true){
         alert("Formulario enviado com sucesso")
     }else{
         alert("Preencha os campos corretamente")
