@@ -1,0 +1,55 @@
+body{
+    background-image: linear-gradient(to right, red, black);
+}
+
+.container{
+    width: 100%;
+    height: 900px;
+    margin: auto;
+}
+
+#Menu{
+    width: 100%;
+    height: 150px;
+    text-align: center;
+}
+#Menu ul li{
+    list-style: none;
+    display: inline;
+    padding: 4px;
+}
+#Menu ul li a{
+    font-family: Arial;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+}
+#Menu ul li a:hover{
+    background-color: red;
+    color: black;
+    padding: 4px;
+}
+
+h1,h2{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    text-align: center;
+}
+p{
+    font-size:  30px;
+    color: black;
+    text-align: center;
+}
+
+
+
+#Quiz{
+    width: 100px;
+    height: 70px;
+    background-color: chartreuse;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-left: 45px;
+    align-items: center;
+}
